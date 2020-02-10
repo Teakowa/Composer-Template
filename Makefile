@@ -23,7 +23,6 @@ analyse:
 	php vendor/bin/phpstan analyse src tests --level=max
 
 insights:
-	mkdir -p build/insights
 	php vendor/bin/phpinsights analyse -v --ansi --min-quality=80 --min-complexity=80 --min-architecture=80 --min-style=80
 
 coverage: test
